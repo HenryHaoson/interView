@@ -42,4 +42,9 @@ trace文件有3种生成方式
 ### 事件分发种onTouch和onTouchEvent的区别
 
 onTouchEvent
-![onTouchEvent1](/images/interView1/onTouchEvent.png)
+
+![onTouchEvent1](/images/interView1/onTouchEvent1.png)
+
+![onTouchEvent1](/images/interView1/onTouchEvent2.png)
+
+
