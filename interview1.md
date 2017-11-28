@@ -40,12 +40,22 @@ trace文件有3种生成方式
 - 使用AS(moitor)
 - 使用DDMS(DDMS会打开trace文件，启动traceView)
 
-### 事件分发种onTouch和onTouchEvent的区别
+### 事件分发中onTouch和onTouchEvent的区别
 
 onTouchEvent
 
+当有一个屏幕触摸事件会触发这个方法（是在事件分发之后）。
+
 ![onTouchEvent1](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/onTouchEvent1.png)
 
+可以实现这个方法处理触摸事件。如果这个方法用来监听
 ![onTouchEvent2](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/onTouchEvent2.png)
+
+
+onTouch
+
+这个方法是事件分发之前执行的，可以在事件传到下一个view之前处理这个Event。这也是我觉得和onTouchEvent方法区别最大的地方。
+
+![onTouch](https://raw.githubusercontent.com/HenryHaoson/interView/mas    ter/images/interview1/onTouch1.png)
 
 
