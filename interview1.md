@@ -56,6 +56,6 @@ onTouch
 
 这个方法是事件分发之前执行的，可以在事件传到下一个view之前处理这个Event。这也是我觉得和onTouchEvent方法区别最大的地方。
 
-![onTouch](https://raw.githubusercontent.com/HenryHaoson/interView/mas    ter/images/interview1/onTouch1.png)
+![onTouch](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/onTouch1.png)
 
 
