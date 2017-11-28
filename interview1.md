@@ -28,7 +28,8 @@ trace文件有3种生成方式
 - 使用代码生成
   > 使用代码生成可以很方便的控制开始和结束的地方
 
- ```java
+    ```java
+
 	//开始trace，文件保存到“/sdcard/tracing.trace"
 	Debug.startMethodTracing("tracing");
 	//...
