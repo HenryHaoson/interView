@@ -44,8 +44,8 @@ trace文件有3种生成方式
 
 onTouchEvent
 
-![onTouchEvent1](./images/interView1/onTouchEvent1.png)
+![onTouchEvent1](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/onTouchEvent1.png)
 
-![onTouchEvent1](./images/interView1/onTouchEvent2.png)
+![onTouchEvent2](https://raw.githubusercontent.com/HenryHaoson/interView/mas    ter/images/interview1/onTouchEvent2.png)
 
 
