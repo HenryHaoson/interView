@@ -26,16 +26,20 @@ TraceView是AndroidSDK中内置的一个工具。可以加载trace文件，用�
 trace文件有3种生成方式
 
 - 使用代码生成
- > 使用代码生成可以很方便的控制开始和结束的地方
+  > 使用代码生成可以很方便的控制开始和结束的地方
 
  ```java
 	//开始trace，文件保存到“/sdcard/tracing.trace"
 	Debug.startMethodTracing("tracing");
 	//...
 	Debug.stopMethodTracing();
+
     ```
 
 - 使用AS(moitor)
 - 使用DDMS(DDMS会打开trace文件，启动traceView)
 
+### 事件分发种onTouch和onTouchEvent的区别
 
+onTouchEvent
+![onTouchEvent1](/images/interView1/onTouchEvent.png)
