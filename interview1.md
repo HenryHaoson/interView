@@ -59,3 +59,28 @@ onTouch
 ![onTouch](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/onTouch1.png)
 
 
+### SSL握手过程（参考的阮同学的文章）
+
+http://www.ruanyifeng.com/blog/2014/09/illustration-ssl.html
+
+握手过程就是在客户端和服务端进行加密通信之前进行连接和交换参数的过程。
+
+握手过程分为5步
+
+- 第一步:客户端向服务端发送协议版本号，一个随机数和支持的加密算法。
+
+- 第二步:服务端向客户端发送一个随机数和数字证书。
+
+- 第三步:客户端确认数字证书有效，生成一个随机数，并且用数字证书中的公钥来加密这个随机数发送给服务端。
+
+- 第四步:服务端用自己的私钥解密这个随机数。
+
+- 第五步:客户端和服务端用上面的这3个随机数和加密算法生成一个用来对话的key（对话密钥）。
+
+![SSL握手过程](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/ssl.png)
+
+SLL中断Session恢复的方法。
+
+有两种方法，一种是保存一个SessionID，服务端验证SessionID对应的Session是否存在就行。缺点是SessionID可能只存在一个台服务器上。所有浏览器都支持这种方法。
+
+还有一种方法是SessionTicket。客户端向服务器发送服务器在上一次对话中发送过来的Session Ticket。然后就可以继续使用Session Ticket中的密钥进行对话了。
