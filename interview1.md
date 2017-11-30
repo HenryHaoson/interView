@@ -84,3 +84,8 @@ SLL中断Session恢复的方法。
 有两种方法，一种是保存一个SessionID，服务端验证SessionID对应的Session是否存在就行。缺点是SessionID可能只存在一个台服务器上。所有浏览器都支持这种方法。
 
 还有一种方法是SessionTicket。客户端向服务器发送服务器在上一次对话中发送过来的Session Ticket。然后就可以继续使用Session Ticket中的密钥进行对话了。
+
+### 如何保证一个后台服务不被杀死，比较省电的方式是？
+
+
+
