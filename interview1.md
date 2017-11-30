@@ -98,3 +98,16 @@ SLL中断Session恢复的方法。
 - 方法5:通过监听系统广播，来检测service是否还存活，如果死掉了就唤醒；
 
 这只是针对Service的，进程保活文章链接http://www.jianshu.com/p/63aafe3c12af
+
+
+### 序列化的几种方式(区别）
+
+[Serializable和Paracable的区别](https://henryhaoson.github.io/2017/07/05/android%E5%BA%8F%E5%88%97%E5%8C%96%E9%97%AE%E9%A2%98/)
+
+- Serializable
+
+- Parcable
+
+- Json
+
+
