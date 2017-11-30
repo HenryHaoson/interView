@@ -87,5 +87,14 @@ SLL中断Session恢复的方法。
 
 ### 如何保证一个后台服务不被杀死，比较省电的方式是？
 
+- 方法1:提升Service的进程优先级（前台Service）；
 
+- 方法2:onStartCommand方法，返回START_STICKY；
 
+- 方法3:在onDestroy中启动Servic（强制停止Service的时候，可能不走onDestroy方法）；
+
+- 方法4:设置Persistent属性；
+
+- 方法5:通过监听系统广播，来检测service是否还存活，如果死掉了就唤醒；
+
+这只是针对Service的，进程保活文章链接http://www.jianshu.com/p/63aafe3c12af
