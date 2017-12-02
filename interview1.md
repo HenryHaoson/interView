@@ -115,6 +115,6 @@ SLL中断Session恢复的方法。
 
 一张图的事情，核心思想：责任链模式
 
-![dispatch](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/dispathc.png)
+![dispatch](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview1/dispatch1.png)
 
 ### 
