@@ -111,3 +111,10 @@ SLL中断Session恢复的方法。
 - Json
 
 
+### view事件分发
+
+一张图的事情，核心思想：责任链模式
+
+![dispatch](https://raw.githubusercontent.com/HenryHaoson/interView/maste    r/images/interview1/dispathc.png)
+
+
