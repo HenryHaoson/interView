@@ -39,7 +39,7 @@ int main()
 
 当执行fork函数的时候，可以将程序分成两个部分，以fork函数作为分割
 
-![fork1](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview2/forkl.png)
+![fork1](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview2/fork1.png)
 
 分为四个步骤：
 
