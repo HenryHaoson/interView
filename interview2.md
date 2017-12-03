@@ -37,4 +37,18 @@ int main()
 
 - fork是复制与当前进程相同的进程，新的进程的所有数据都和父进程一直。
 
+当执行fork函数的时候，可以将程序分成两个部分，以fork函数作为分割
 
+![fork1](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview2/forkl.png)
+
+分为四个步骤：
+
+- 直接在初始进程P执行完partA。
+
+- 执行到pid = fork()的时候，进程P启动了一个新的进程Q。和P是同一个程序的进程。Q继承P的所有变量、环境变量、程序计数器的当前值。
+
+- 在进程P中，fork()启动新的进程,将Q的PID返回给pid，并继续执行PartB。
+
+- 在进程Q中，fork()不启动新的进程且将0赋值给pid，并继续执行PartB（这里要注意，Q并没有执行PartA）。
+
+接下来题目就好解了。
