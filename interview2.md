@@ -52,3 +52,10 @@ int main()
 - 在进程Q中，fork()不启动新的进程且将0赋值给pid，并继续执行PartB（这里要注意，Q并没有执行PartA）。
 
 接下来题目就好解了。
+
+解题靠图
+![](https://raw.githubusercontent.com/HenryHaoson/interView/master/images/interview2/fork2.png)
+
+总共会产生3个新的进程，所以说打印语句会另外执行3次。
+
+
