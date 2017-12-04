@@ -63,4 +63,31 @@ elementData = Arrays.copyOf(elementData, newCapacity);
 
 ```
 
-### 
+### 顺带说一下remove操作
+
+看代码就行和注释就行。
+
+```java
+
+ public boolean remove(Object o) {
+	//如果传进来要remove的对象是空的。就遍历一下，将里面的空对象都remove。
+        if (o == null) {
+            for (int index = 0; index < size; index++)
+                if (elementData[index] == null) {
+                    fastRemove(index);
+                    return true;
+                }
+        } else {
+	//如果传进来的对象不是空的，就看里面有没有这个对象，有就删除。
+            for (int index = 0; index < size; index++)
+                if (o.equals(elementData[index])) {
+                    fastRemove(index);
+                    return true;
+                }
+        }
+        return false;
+    }
+
+``` 
+
+
