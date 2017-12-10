@@ -83,7 +83,20 @@ Cache-Control: stale-if-error=<seconds>
 
 - stale-while-revalidate=<seconds>:表明现接受过期的缓存，但是异步请求新的数据。时间是愿意接受的过期时长。
 
-。。。
+
+针对重新生效的策略
+
+- must-revalidate:在使用这个之前必须确定过期资源的状态，过期的数据是不会采用的。
+
+- proxy-revalidate:和must-revalidate一样，但是制作用在共享的缓存区上。
+
+- immutable:304(逃
+
+还有一些其他的策略
+
+- no-store:缓存不应该缓存http请求或者是响应体。
+
+- no-transform:不能够转换资源。例如Content-Encoding, Content-Range, Content-Type headers这些不能够被一些代理修改。
 
 
 
